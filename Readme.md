@@ -1,8 +1,8 @@
-# Deep-EIoU
+# Deep-HM-SORT
 
-[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/iterative-scale-up-expansioniou-and-deep/multi-object-tracking-on-sportsmot)](https://paperswithcode.com/sota/multi-object-tracking-on-sportsmot?p=iterative-scale-up-expansioniou-and-deep)
+This is the unofficial code for paper "Deep HM-SORT: Enhancing Multi-Object Tracking in Sports with Deep Features, Harmonic Mean, and Expansion IOU". [Paper](https://arxiv.org/abs/2406.12081)
 
-This is the official code for paper "Iterative Scale-Up ExpansionIoU and Deep Features Association for Multi-Object Tracking in Sports (2024 WACV RWS Workshop)". [Paper](https://openaccess.thecvf.com/content/WACV2024W/RWS/papers/Huang_Iterative_Scale-Up_ExpansionIoU_and_Deep_Features_Association_for_Multi-Object_Tracking_WACVW_2024_paper.pdf)
+The code is originally modified from [Deep_EIOU](https://github.com/hsiangwei0903/Deep-EIoU)
 
 ## Setup Instructions
 
@@ -75,20 +75,21 @@ Demo on your custom video
 python tools/demo.py --path <your video path>
 ```
 
-## Citation
-If you find our work useful, please kindly cite our paper, thank you.
+Demo on your custom image
 ```
-@inproceedings{huang2024iterative,
-  title={Iterative Scale-Up ExpansionIoU and Deep Features Association for Multi-Object Tracking in Sports},
-  author={Huang, Hsiang-Wei and Yang, Cheng-Yen and Sun, Jiacheng and Kim, Pyong-Kun and Kim, Kwang-Ju and Lee, Kyoungoh and Huang, Chung-I and Hwang, Jenq-Neng},
-  booktitle={Proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision},
-  pages={163--172},
-  year={2024}
-}
+python tools/demo_image.py --path <your image path>
 ```
+
+## Modified Part
+
+### Deep_HM_SORT.py
+The tracking algorithm of Deep_HM_SORT
+
+### demo_image.py
+Demo on the images by using Deep_HM_SORT
 
 ## Acknowledgements
-The code is based on [ByteTrack](https://github.com/ifzhang/ByteTrack), [Torchreid](https://github.com/KaiyangZhou/deep-person-reid) and [BoT-SORT](https://github.com/NirAharon/BoT-SORT), thanks for their wonderful work!
+The code is based on [ByteTrack](https://github.com/ifzhang/ByteTrack), [Torchreid](https://github.com/KaiyangZhou/deep-person-reid), [BoT-SORT](https://github.com/NirAharon/BoT-SORT) and [Deep_EIOU](https://github.com/hsiangwei0903/Deep-EIoU), thanks for their wonderful work!
 
 ## Contact
-Hsiang-Wei Huang (hwhuang@uw.edu)
+Kuang-Ming Chen(kmchen@uw.edu)
